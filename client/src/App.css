@@ -1,0 +1,7 @@
+.nav {
+    background: #fff4ca;
+    border-bottom: 2px solid #ffd31f;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

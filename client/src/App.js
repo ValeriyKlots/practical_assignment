@@ -1,5 +1,13 @@
-import {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
+import Login from './components/Login';
+import UserInfo from './components/UserInfo';
 import './App.css';
+import {useDispatch, useSelector} from 'react-redux';
+import {login, logout} from './redux/actions/userActions';
+import Posts from './components/Posts';
+
+import users from './users';
+import Header from "./components/Header";
 
 function App() {
 
@@ -11,10 +19,18 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      TASK IMPLEMENTATION HERE
-    </div>
+      <div className="App">
+          {/*<Header/>*/}
+            <div>
+              <label>Привет </label>
+              <button >Выйти</button>
+            </div>
+        <div>
+          <Posts/>
+        </div>
+
+      </div>
   );
-}
+};
 
 export default App;
